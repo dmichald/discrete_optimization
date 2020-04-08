@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id="mainBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/8.0.171" fx:controller="controllers.HungarianController">
+    <top>
+        <MenuBar fx:id="menuBar" prefHeight="13.0" prefWidth="1259.0" BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#openFile" text="Open..."/>
+                        <MenuItem mnemonicParsing="false" onAction="#saveFile" text="Save"/>
+                        <MenuItem mnemonicParsing="false" onAction="#enterFromKeyboard" text="Enter from keyboard"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <left>
+        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="hungarianMethod" disable="true" mnemonicParsing="false" prefHeight="31.0"
+                        prefWidth="108.0" text="Solve"/>
+                <Button mnemonicParsing="false" onAction="#backToMenu" prefHeight="31.0" prefWidth="105.0" text="Menu"/>
+            </children>
+        </VBox>
+    </left>
+</BorderPane>

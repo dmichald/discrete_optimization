@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/8.0.171" fx:controller="controllers.JohnsonController">
+    <top>
+        <MenuBar fx:id="menuBar" prefHeight="13.0" prefWidth="1259.0" BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#openFile" text="Open..."/>
+                        <MenuItem mnemonicParsing="false" onAction="#saveFile" text="Save"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <left>
+        <VBox prefHeight="330.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button mnemonicParsing="false" onAction="#solve" prefHeight="31.0" prefWidth="106.0" text="Solve"/>
+                <Button mnemonicParsing="false" onAction="#backToMenu" prefHeight="31.0" prefWidth="105.0" text="Menu"/>
+            </children>
+        </VBox>
+    </left>
+    <bottom>
+        <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox prefHeight="100.0" prefWidth="270.0">
+                    <children>
+                        <VBox prefHeight="100.0" prefWidth="168.0" spacing="10.0">
+                            <children>
+                                <Label text="Amount of tasks;"/>
+                            </children>
+                            <HBox.margin>
+                                <Insets left="10.0"/>
+                            </HBox.margin>
+                        </VBox>
+                        <VBox prefHeight="100.0" prefWidth="75.0">
+                            <children>
+                                <TextField fx:id="amountTF" prefHeight="20.0" prefWidth="100.0"/>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+                <Button mnemonicParsing="false" onAction="#enterData" prefHeight="31.0" prefWidth="110.0"
+                        text="Enter data"/>
+            </children>
+        </HBox>
+    </bottom>
+</BorderPane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity" prefHeight="472.0" prefWidth="488.0" xmlns="http://javafx.com/javafx/8.0.171"
+      fx:controller="controllers.MenuController">
+    <children>
+        <Label alignment="CENTER" prefHeight="57.0" prefWidth="493.0" text="MENU"/>
+        <Button mnemonicParsing="false" onAction="#switchToHungarian" prefHeight="61.0" prefWidth="491.0"
+                text="Hungarian Algorithm"/>
+        <Button mnemonicParsing="false" onAction="#switchToKnapsackProblem" prefHeight="61.0" prefWidth="492.0"
+                text=" Knapsack Problem"/>
+        <Button mnemonicParsing="false" onAction="#switchToTSP" prefHeight="61.0" prefWidth="492.0"
+                text="Travelling Salesman Problem"/>
+        <Button mnemonicParsing="false" onAction="#switchToJohnson" prefHeight="61.0" prefWidth="492.0" text="Johnson"/>
+    </children>
+</VBox>
